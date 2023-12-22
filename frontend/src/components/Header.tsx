@@ -1,0 +1,20 @@
+import { Link } from "react-router-dom";
+
+const Header = () => {
+    return (
+        <header>
+            <Link to="/">
+                <h1>Dice Game!</h1>
+            </Link>
+            <div className="Header">
+                <nav>
+                    <Link to="/leaderboard">
+                        <h2>Leaderboard</h2>
+                    </Link>
+                </nav>
+            </div>
+        </header>
+    );
+};
+
+export default Header;
